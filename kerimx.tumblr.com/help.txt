@@ -1,0 +1,9 @@
+---COVER---
+<p class="mb10">
+<a class="lb" href="1280.jpg" data-lightbox-gallery="g123123">
+<img src="500.jpg">
+</a>
+</p>
+---COVER---
+
+
