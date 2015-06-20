@@ -76,7 +76,8 @@ ul.l1 li a:hover, ul.l1 li a:hover:before {color:#E24F4F;}
 .photoset > figure > a:hover > b {height:0; opacity:0; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";}
 
 /*aside*/
-.kx100 {float:right; width:342px; display:none !important;}
+.kx100 {float:right; width:342px;}
+.kx100, .kx100 * {display:none !important;}
 
 /*profil*/
 .profile figure img {width:100%; box-shadow:0 2px 7px -2px #000;}
