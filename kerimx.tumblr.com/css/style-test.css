@@ -46,8 +46,8 @@ ul.l1 li a:hover, ul.l1 li a:hover:before {color:#E24F4F;}
 
 /*post*/
 .posts {width:100%; max-width:1040px; margin:0 auto;}
-.posts > article {margin:30px 1%; overflow:hidden; padding-bottom:50px;}
-.posts > article, .grid-sizer {width:48%;}
+.posts > article {margin:30px 0; overflow:hidden; padding-bottom:50px;}
+.posts > article, .grid-sizer {width:48%; margin-left:1%; margin-right:1%;}
 .posts > article:first-child {margin-top:0;}
 .posts > article > a.url {display:block; background:#a6a6a6; white-space:nowrap; padding:7px 40px 7px 10px; font-family:arial; font-size:12px; color:#fff; line-height:1; position:absolute; right:0; bottom:7px;}
 .posts > article > .tags {display:none;}
