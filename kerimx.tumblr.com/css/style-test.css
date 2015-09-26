@@ -213,4 +213,5 @@ header nav ul li.tumblr {background:rgba(45,70,97,1);}
 @media screen and (max-width: 310px) {
 body * {display:none;}
 body:before {content:"hesap makinesi detected !!!11"; font-family:arial; font-size:2em;}
+.wtf {}
 }
