@@ -94,7 +94,7 @@ footer {clear:both; visibility:hidden;}
 /*header*/
 header {padding-top:60px;}
 header nav {width:100%; background:#E24F4F; position:fixed; left:0; top:0; box-shadow:0 1px 4px -2px #000; z-index:30;}
-header nav section {width:530px; margin:0 auto;}
+header nav section {max-width:1078px; margin:0 auto;}
 header nav ul.m1 {float:left;}
 header nav ul.social {float:right;}
 header nav ul li {float:left; border-right:1px solid #f1f1f1; transition:background 0.2s ease-in-out;}
