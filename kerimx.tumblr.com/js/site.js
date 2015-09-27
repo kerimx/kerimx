@@ -20,6 +20,7 @@ $(document).ready(function () {
       itemSelector: '.posts > article',
       percentPosition: true,
       columnWidth: '.grid-sizer',
+	  transitionDuration: '0.2s'
     });
   });
 });
