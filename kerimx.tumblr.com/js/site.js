@@ -12,8 +12,20 @@ if (homePage == 1) {
 	$('body').addClass('normalPage');
 	}
 	
-/*bossa gizle*/
-//if ($('.asd').html().length < 15) $('.asd').addClass('hidden');
+//masonry
+$(document).ready(function () {
+  // init Masonry after all images have loaded
+  var $grid = $('.posts').imagesLoaded(function () {
+    $grid.masonry({
+      itemSelector: '.posts > article',
+      percentPosition: true,
+      columnWidth: '.grid-sizer',
+    });
+  });
+});
+	
+/*bossa gizle
+if ($('.asd').html().length < 15) $('.asd').addClass('hidden');*/
 	
 //lightbox
 $('.photo figure > a, .photoset figure > a, article .lb').nivoLightbox({ keyboardNav: true });
@@ -23,7 +35,7 @@ $('li.pageInfo > i').click(function(){
 	$('html, body').animate({scrollTop:0}, 600);
 });
 
-//menu mobil
+//mobil menu
 $('header nav > i').click(function(e) {
 	e.stopPropagation();
     if(!$('header nav').hasClass('open')){
