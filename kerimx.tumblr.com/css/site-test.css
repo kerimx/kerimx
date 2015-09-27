@@ -47,7 +47,7 @@ ul.l1 li a:hover, ul.l1 li a:hover:before {color:#E24F4F;}
 /*post*/
 .posts {max-width:1100px; margin:0 auto;}
 .posts > article {margin-top:15px; margin-bottom:15px; overflow:hidden; padding-bottom:50px;}
-.posts > article, .grid-sizer {display:block; width:48%; margin-right:1%; margin-left:1%;}
+.posts > article, .grid-sizer {width:48%; margin-right:1%; margin-left:1%;}
 .posts > article > a.url {display:block; background:#a6a6a6; white-space:nowrap; padding:7px 40px 7px 10px; font-family:arial; font-size:12px; color:#fff; line-height:1; position:absolute; right:0; bottom:7px;}
 .posts > article > .tags {display:none;}
 /*post hover*/
