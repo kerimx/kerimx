@@ -65,6 +65,9 @@ ul.l1 li a:hover, ul.l1 li a:hover:before {color:#E24F4F;}
 .askPage .posts > article {border-color:#E24F4F;}
 
 /*post type cfg*/
+/*video*/
+.video .tumblr_video_container {width:100% !important; height:auto !important;}
+.video .tumblr_video_container iframe {max-height:320px;}
 /*chat*/
 .chat ul li b {color:#999; text-decoration:underline; font-weight:normal;}
 /*photoset*/
