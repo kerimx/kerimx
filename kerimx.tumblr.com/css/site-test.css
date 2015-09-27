@@ -26,7 +26,7 @@ p {margin:7px 0;}
 .mt10 {margin-top:10px;} .mr10 {margin-right:10px;} .mb10 {margin-bottom:10px;} .ml10 {margin-left:10px;}
 
 
-.container {width:1100px; margin:0 auto;}
+.container {width:100%;}
 
 article h4, article h4 > * {font-size:24px; text-shadow:0px 1px 1px #BDBDBD;}
 article > h4 > a, article p a {text-decoration:underline;}
@@ -45,10 +45,9 @@ ul.l1 li a:before {content:"\f0da"; font-family:FontAwesome; color:#bdbdbd; disp
 ul.l1 li a:hover, ul.l1 li a:hover:before {color:#E24F4F;}
 
 /*post*/
-.posts {}
+.posts {max-width:1100px; margin:0 auto;}
 .posts > article {margin-top:15px; margin-bottom:15px; overflow:hidden; padding-bottom:50px;}
 .posts > article, .grid-sizer {width:48%; margin-left:1%; margin-right:1%;}
-.posts > article:first-child {margin-top:0;}
 .posts > article > a.url {display:block; background:#a6a6a6; white-space:nowrap; padding:7px 40px 7px 10px; font-family:arial; font-size:12px; color:#fff; line-height:1; position:absolute; right:0; bottom:7px;}
 .posts > article > .tags {display:none;}
 /*post hover*/
@@ -179,7 +178,6 @@ header nav ul li.tumblr > a:after {text-indent:0; content:"\f067"; padding-left:
 @media screen and (max-width: 550px) {
 .noPc {display:inline-block !important;}
 body {background:#fff !important;}
-.container {width:auto;}
 .container > * {width:100%; float:none;}
 header nav ul.m1 li:first-child {border-left:none;}
 header nav ul.social li:last-child {border-right:none;}
