@@ -35,9 +35,9 @@
        </aside>
         
     <section class="posts">
-    {block:Posts}
 	  <div class="grid-sizer"></div>
-
+    {block:Posts}
+    
       {block:Text}
       <article class="clearfix box k{PostID} {PostType}">
         {block:Title}<h4>{Title}</h4>{/block:Title}
@@ -142,6 +142,7 @@
       {/block:Answer}
 
     {/block:Posts}
+    
     </section>
       {block:Pagination}<nav class="paging"><section class="maxW clearfix"> <ul class="p1">
         {block:PreviousPage}<li class="prev"><a href="{PreviousPage}"><i class="fa fa-chevron-left"></i></a></li>{/block:PreviousPage}

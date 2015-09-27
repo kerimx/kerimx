@@ -189,7 +189,7 @@ header nav ul.social li:last-child {border-right:none;}
 .box {padding:10px;}
 
 .posts {padding:0 10px;}
-.posts > article, .grid-sizer {position:static !important; width:100%; margin-right:0; margin-left:0;}
+.posts > article, .grid-sizer {position:relative !important /*no static*/; left:0 !important; top:0 !important; width:100%; margin-right:0; margin-left:0;}
 
 /*menü 550px*/
 header nav > i.fa {display:table !important; margin:0 auto; padding:10px; cursor:pointer; font-size:1.5em; color:#fff;}
