@@ -6,7 +6,7 @@
 ::selection {background: #E24F4F; color: #FFFFFF; text-shadow: 0 1px 3px #000000;}
 ::-moz-selection {background: #E24F4F; color: #FFFFFF; text-shadow: 0 1px 3px #000000;}
 
-body {background:url(//kerimx.net/kerimx.tumblr.com/images/bg.jpg) no-repeat fixed center top #fff;}
+body {background:url(//kerimx.net/kerimx.tumblr.com/images/bg.jpg) no-repeat fixed center bottom #fff;}
 
 .clearfix:after {content:"."; display:block; clear:both; visibility:hidden; height:0; line-height:0;}
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {display:block;}
