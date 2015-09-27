@@ -182,8 +182,10 @@ body {background:#fff !important;}
 header nav ul.m1 li:first-child {border-left:none;}
 header nav ul.social li:last-child {border-right:none;}
 
-.posts {padding:0 10px;}
 .box {padding:10px;}
+
+.posts {padding:0 10px;}
+.posts > article, .grid-sizer {width:100%;}
 
 /*menü 550px*/
 header nav > i.fa {display:table !important; margin:0 auto; padding:10px; cursor:pointer; font-size:1.5em; color:#fff;}
