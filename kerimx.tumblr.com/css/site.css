@@ -211,6 +211,9 @@ header nav ul li.facebook a:after {content:".com/kerimx"}
 header nav ul li.twitter a:after {content:".com/kerimx"}
 header nav ul li.instagram a:after {content:".com/_kerim"}
 header nav ul li.tumblr {background:rgba(45,70,97,1);}
+
+/*sayfalama 600px*/
+nav.paging > .maxW {max-width:522px;}
 }
 
 @media screen and (max-width: 480px) {
