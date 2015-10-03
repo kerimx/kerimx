@@ -38,7 +38,7 @@ $('li.pageInfo > i').click(function(){
 
 //mobil menu
 $('header nav > i').click(function(e) {
-	e.stopPropagation();
+	//e.stopPropagation();
     if(!$('header nav').hasClass('open')){
 			$('header nav').addClass('open');
 		}else{
