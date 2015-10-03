@@ -55,18 +55,18 @@ ul.l1 li a:hover, ul.l1 li a:hover:before {color:#E24F4F;}
 .posts > article > .box > a.url {display:block; background:#a6a6a6; white-space:nowrap; padding:7px 40px 7px 10px; font-size:13px; color:#fff; line-height:1; position:absolute; right:0; bottom:7px;}
 .posts > article > .box > .tags {display:none;}
 /*post hover*/
-.posts > article:hover {border-color:#E24F4F;}
+.posts > article:hover > .box {border-color:#E24F4F;}
 .posts > article:hover > .box > a.url {background:#E24F4F;}
 .posts > article > .box > a.url:after {content:"\f0c1"; font-family:FontAwesome; position:absolute; right:15px; color:#fefefe;}
 .posts > article:hover > .box > a.url:after {color:#fff;}
 /*post detay .postPage*/
-.postPage .posts > article {border-color:#E24F4F;}
+.postPage .posts > article > .box {border-color:#E24F4F;}
 .postPage .posts > article > .box > a.url {background:#E24F4F;}
 /*post değilse .k*/
-.posts > article.k {padding-bottom:0;}
-.posts > article.k a.url {display:none;}
+.posts > article.k > .box {padding-bottom:0;}
+.posts > article.k > .box a.url {display:none;}
 /*soru sayfası .askPage*/
-.askPage .posts > article {border-color:#E24F4F;}
+.askPage .posts > article > .box {border-color:#E24F4F;}
 
 /*post type cfg*/
 /*video*/
@@ -74,12 +74,12 @@ ul.l1 li a:hover, ul.l1 li a:hover:before {color:#E24F4F;}
 /*chat*/
 .chat ul li b {color:#999; text-decoration:underline; font-weight:normal;}
 /*photoset*/
-.photoset > figure {margin-top:-2%;}
-.photoset > figure > a {display:inline-block; width:49%; margin-top:2%; vertical-align:top; position:relative; height:200px; background-size:cover; background-position:center center; background-repeat:no-repeat;}
-.photoset > figure > a:nth-child(even) {margin-left:2%;}
-.photoset > figure > a > b {font-size:16px; color:#fff; font-weight:normal; line-height:1.2; text-shadow:1px 1px 1px #000; width:100%; padding:7px; position:absolute; left:0; bottom:0; background-color:rgba(0,0,0,.7); overflow:hidden; max-height:100%; border-top:1px dotted #e24f4f;}
-.photoset > figure > a > b * {color:#fff;}
-.photoset > figure > a:hover > b {height:0; opacity:0; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";}
+.photoset > .box > figure {margin-top:-2%;}
+.photoset > .box > figure > a {display:inline-block; width:49%; margin-top:2%; vertical-align:top; position:relative; height:200px; background-size:cover; background-position:center center; background-repeat:no-repeat;}
+.photoset > .box > figure > a:nth-child(even) {margin-left:2%;}
+.photoset > .box > figure > a > b {font-size:16px; color:#fff; font-weight:normal; line-height:1.2; text-shadow:1px 1px 1px #000; width:100%; padding:7px; position:absolute; left:0; bottom:0; background-color:rgba(0,0,0,.7); overflow:hidden; max-height:100%; border-top:1px dotted #e24f4f;}
+.photoset > .box > figure > a > b * {color:#fff;}
+.photoset > .box > figure > a:hover > b {height:0; opacity:0; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";}
 
 /*aside*/
 .kx100 {float:right; width:342px;}
