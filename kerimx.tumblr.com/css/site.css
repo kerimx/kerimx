@@ -184,13 +184,11 @@ header nav ul li.tumblr > a:after {text-indent:0; content:"\f067"; padding-left:
 @media screen and (max-width: 600px) {
 .noPc {display:inline-block !important;}
 body {background:#fff !important;}
-.container > * {width:100%; float:none;}
+.maxW {width:96%;}
+.box {padding:10px;}
+
 header nav ul.m1 li:first-child {border-left:none;}
 header nav ul.social li:last-child {border-right:none;}
-
-.maxW {width:96%;}
-
-.box {padding:10px;}
 
 .posts {padding:0 10px; height:auto !important;}
 .posts > article, .grid-sizer {display:block; position:static !important; width:100%; max-width:522px; margin-right:auto; margin-left:auto;}
