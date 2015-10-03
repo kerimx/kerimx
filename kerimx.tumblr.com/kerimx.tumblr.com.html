@@ -39,7 +39,7 @@
     {block:Posts}
     
       {block:Text}
-      <article class="clearfix box k{PostID} {PostType}"><section class="postContent">
+      <article class="box k{PostID} {PostType}"><section class="clearfix boxContent">
         {block:Title}<h4>{Title}</h4>{/block:Title}
         {Body}
         {block:HasTags}<section class="tags">{block:Tags}<a href="{TagURL}">{Tag}</a> {/block:Tags}</section>{/block:HasTags}
@@ -48,7 +48,7 @@
       {/block:Text}
 
       {block:Photo}
-      <article class="clearfix box k{PostID} {PostType}"><section class="postContent">
+      <article class="box k{PostID} {PostType}"><section class="clearfix boxContent">
         <figure>
           <a href="{PhotoURL-HighRes}"><img src="{PhotoURL-500}"></a>
           {block:Caption}<figcaption>{Caption}</figcaption>{/block:Caption}
@@ -59,7 +59,7 @@
       {/block:Photo}
 
       {block:Panorama}
-      <article class="clearfix box k{PostID} {PostType}rama"><section class="postContent">
+      <article class="box k{PostID} {PostType}rama"><section class="clearfix boxContent">
         <figure>
           {LinkOpenTag}<img src="{PhotoURL-500}">{LinkCloseTag}
           {block:Caption}<figcaption>{Caption}</figcaption>{/block:Caption}
@@ -70,7 +70,7 @@
       {/block:Panorama}
 
       {block:Photoset}
-      <article class="clearfix box k{PostID} {PostType}set col{PhotosetLayout}"><section class="postContent">
+      <article class="box k{PostID} {PostType}set col{PhotosetLayout}"><section class="clearfix boxContent">
         <figure class="clearfix">
           {block:Photos}<a style="background-image:url({PhotoURL-250});" data-lightbox-gallery="g{postID}" href="{PhotoURL-HighRes}">{block:Caption}<b>{Caption}</b>{/block:Caption}</a>{/block:Photos}
           {block:Caption}<figcaption>{Caption}</figcaption>{/block:Caption}
@@ -81,7 +81,7 @@
       {/block:Photoset}
 
       {block:Quote}
-      <article class="clearfix box k{PostID} {PostType}"><section class="postContent">
+      <article class="box k{PostID} {PostType}"><section class="clearfix boxContent">
         <blockquote>
           <h4>{Quote}</h4>
           {block:Source}<footer>
@@ -94,7 +94,7 @@
       {/block:Quote}
 
       {block:Link}
-      <article class="clearfix box k{PostID} {PostType}"><section class="postContent">
+      <article class="box k{PostID} {PostType}"><section class="clearfix boxContent">
         <h4><a target="_blank" href="{URL}">{Name}</a></h4>
         {block:Description}{Description}{/block:Description}
         {block:HasTags}<section class="tags">{block:Tags}<a href="{TagURL}">{Tag}</a> {/block:Tags}</section>{/block:HasTags}
@@ -103,7 +103,7 @@
       {/block:Link}
 
       {block:Chat}
-      <article class="clearfix box k{PostID} {PostType}"><section class="postContent">
+      <article class="box k{PostID} {PostType}"><section class="clearfix boxContent">
         {block:Title}<h4>{Title}</h4>{/block:Title}
         <ul>{block:Lines}<li class="{Alt}">{block:Label}<b>{Label}</b>{/block:Label} {Line}</li>{/block:Lines}</ul>
         {block:HasTags}<section class="tags">{block:Tags}<a href="{TagURL}">{Tag}</a> {/block:Tags}</section>{/block:HasTags}
@@ -112,7 +112,7 @@
       {/block:Chat}
 
       {block:Audio}
-      <article class="clearfix box k{PostID} {PostType}"><section class="postContent">
+      <article class="box k{PostID} {PostType}"><section class="clearfix boxContent">
         {AudioPlayerWhite}
         {block:Caption}{Caption}{/block:Caption}
         {block:HasTags}<section class="tags">{block:Tags}<a href="{TagURL}">{Tag}</a> {/block:Tags}</section>{/block:HasTags}
@@ -121,7 +121,7 @@
       {/block:Audio}
 
       {block:Video}
-      <article class="clearfix box k{PostID} {PostType}"><section class="postContent">
+      <article class="box k{PostID} {PostType}"><section class="clearfix boxContent">
         {Video-500}
         {block:Caption}{Caption}{/block:Caption}
         {block:HasTags}<section class="tags">{block:Tags}<a href="{TagURL}">{Tag}</a> {/block:Tags}</section>{/block:HasTags}
@@ -130,7 +130,7 @@
       {/block:Video}
 
       {block:Answer}
-      <article class="clearfix box k{PostID} {PostType}"><section class="postContent">
+      <article class="box k{PostID} {PostType}"><section class="clearfix boxContent">
         <blockquote>
           <h4>{Question}</h4>
           <footer><cite>{Asker}</cite></footer>
