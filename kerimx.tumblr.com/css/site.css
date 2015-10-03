@@ -190,7 +190,7 @@ body {background:#fff !important;}
 header nav ul.m1 li:first-child {border-left:none;}
 header nav ul.social li:last-child {border-right:none;}
 
-.posts {padding:0 10px; height:auto !important;}
+.posts {height:auto !important;}
 .posts > article, .grid-sizer {display:block; position:static !important; width:100%; max-width:522px; margin-right:auto; margin-left:auto;}
 
 /*menü 600px*/
