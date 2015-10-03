@@ -30,6 +30,7 @@ p {margin:7px 0;}
 
 
 .container {width:100%;}
+.maxW {width:96%; max-width:1078px; margin:0 auto;}
 
 article h4, article h4 > * {font-size:24px;}
 article h4 > a, article p a {text-decoration:underline;}
@@ -48,7 +49,7 @@ ul.l1 li a:before {content:"\f0da"; font-family:FontAwesome; color:#bdbdbd; disp
 ul.l1 li a:hover, ul.l1 li a:hover:before {color:#E24F4F;}
 
 /*post*/
-.posts {max-width:1100px; margin:0 auto;}
+.posts {max-width:1100px;}
 .posts > article {display:inline-block; vertical-align:top; margin-top:15px; margin-bottom:15px; overflow:hidden;}
 .posts > article, .grid-sizer {width:48%; margin-right:1%; margin-left:1%;}
 .posts > article > .box {padding-bottom:50px;}
@@ -95,9 +96,6 @@ ul.l1 li a:hover, ul.l1 li a:hover:before {color:#E24F4F;}
 
 /*footer*/
 footer {clear:both; visibility:hidden;}
-
-/*maxW*/
-.maxW {width:98%; max-width:1078px; margin:0 auto;}
 
 /*header*/
 header {padding-top:60px;}
@@ -190,6 +188,8 @@ body {background:#fff !important;}
 header nav ul.m1 li:first-child {border-left:none;}
 header nav ul.social li:last-child {border-right:none;}
 
+.maxW {width:96%;}
+
 .box {padding:10px;}
 
 .posts {padding:0 10px; height:auto !important;}
@@ -198,7 +198,7 @@ header nav ul.social li:last-child {border-right:none;}
 /*menü 600px*/
 header nav > i.fa {display:table !important; margin:0 auto; padding:10px; cursor:pointer; font-size:1.5em; color:#fff;}
 header nav.open > i.fa:before {content:"\f00d";}
-header nav > section {display:none; padding:10px 5px;}
+header nav > section {display:none; padding:10px 0;}
 header nav.open > section {display:block;}
 header nav ul {float:none !important;}
 header nav ul.m1 {margin-bottom:15px;}
@@ -211,9 +211,6 @@ header nav ul li.facebook a:after {content:".com/kerimx"}
 header nav ul li.twitter a:after {content:".com/kerimx"}
 header nav ul li.instagram a:after {content:".com/_kerim"}
 header nav ul li.tumblr {background:rgba(45,70,97,1);}
-
-/*sayfalama 600px*/
-nav.paging > .maxW {max-width:522px;}
 }
 
 @media screen and (max-width: 480px) {
