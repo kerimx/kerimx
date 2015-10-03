@@ -32,7 +32,7 @@ p {margin:7px 0;}
 .container {width:100%;}
 .maxW {width:96%; max-width:1078px; margin:0 auto;}
 
-article h4, article h4 > * {font-size:24px; font-weight:500;}
+article h4, article h4 > * {font-size:22px; font-weight:500;}
 article h4 > a, article p a {text-decoration:underline;}
 article p, article p *, article cite, article ul li, article ul li * {font-size:18px;}
 figure figcaption {margin-top:10px;}
