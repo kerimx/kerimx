@@ -28,7 +28,7 @@
   <section class="sub">
     <ul class="m1">
       <li class="home"><a href="/">blog</a></li>
-      <li class="askMe"><a href="/ask">soru vb..</a></li>
+      {block:AskEnabled}{AskLabel}{/block:AskEnabled}
       {block:Pages}
       <li><a target="_blank" href="{URL}">{Label}</a></li>
       {/block:Pages}
@@ -168,9 +168,16 @@
         {block:PreviousPage}<li class="prev"><a href="{PreviousPage}"><i class="fa fa-chevron-left"></i></a></li>{/block:PreviousPage}
         <li class="pageInfo">{CurrentPage}/{TotalPages} <i class="fa fa-angle-double-up"></i></li>
         {block:NextPage}<li class="next"><a href="{NextPage}"><i class="fa fa-chevron-right"></i></a></li>{/block:NextPage}
-      </ul> </section></nav></section>{/block:Pagination}
+      </ul> </section></nav>{/block:Pagination}
+      
+	<div class="test1">{Description}</div>
+	<div class="test2">{MetaDescription}</div>
+   	<div class="test3">{Favicon}</div>
+    <div class="test4">{HeaderImage}</div>
+      </section>
+      
 
-  <footer>footer 'a ne yazim aq? öptüm :)</footer>
+  <footer>{CopyrightYears} footer 'a ne yazim aq? öptüm :)</footer>
 
   <script src="//kerimx.net/upload/js/jquery-2.1.4.min.js"></script>
   <script src="//kerimx.net/upload/js/imagesloaded.pkgd.min.js"></script>

@@ -63,6 +63,7 @@ ul.l1 li a:hover, ul.l1 li a:hover:before {color:#E24F4F;}
 .posts > article > .box > a.url:after {content:"\f0c1"; font-family:FontAwesome; position:absolute; right:15px; color:#fefefe;}
 .posts > article:hover > .box > a.url:after {color:#fff;}
 /*post detay .postPage*/
+.postPage .posts > article {left:25% !important;}
 .postPage .posts > article > .box {border-color:#E24F4F;}
 .postPage .posts > article > .box > a.url {background:#E24F4F;}
 /*soru sayfası .askPage*/
@@ -104,30 +105,16 @@ footer {clear:both; visibility:hidden;}
 /*header*/
 header {padding-top:60px;}
 header nav {width:270px; background:#E24F4F; position:fixed; left:0; top:0; box-shadow:0 1px 4px -2px #000; z-index:30;}
-header nav > a, header nav > h1 {display:inline-block; padding:10px;}
+header nav > a, header nav > h1 {display:inline-block; padding:10px; vertical-align:top;}
 header nav > a.siteMenu i {font-size:28px; color:#fff;}
-header nav > a.aboutMe i {font-size:28px; color:#fff; transform:rotate(27deg);}
-header nav > h1 > a {font-size:20px; font-weight:500;}
+header nav > a.aboutMe i {font-size:28px; color:#fff; transform:rotate(17deg);}
+header nav > h1 > a {font-size:20px; color:#fff; font-weight:500; text-decoration:none !important;}
 /*header menu*/
 header nav ul.m1 {float:left;}
 header nav ul.social {float:right;}
-header nav ul li {float:left; border-right:1px solid #f1f1f1;}
-header nav ul li:first-child {border-left:1px solid #f1f1f1;}
+header nav ul li {}
 header nav ul li a {display:block; padding:10px 20px; font-size:14px; color:#fff; text-decoration:none !important; line-height:1.5;}
-header nav ul.social li a {text-shadow:0 0 10px #fff;}
-header nav ul li:hover {background:#666; box-shadow:0 3px 5px -4px #000;}
-header nav ul li.facebook {background:#4C66A4;}
-header nav ul li.twitter {background:#55ACEE;}
-header nav ul li.instagram {background: #ff364f;
-background: -moz-linear-gradient(-45deg,  #ff364f 0%, #f8c836 20%, #66c486 40%, #4687fb 60%, #a47158 80%, #a58a79 100%);
-background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ff364f), color-stop(20%,#f8c836), color-stop(40%,#66c486), color-stop(60%,#4687fb), color-stop(80%,#a47158), color-stop(100%,#a58a79));
-background: -webkit-linear-gradient(-45deg,  #ff364f 0%,#f8c836 20%,#66c486 40%,#4687fb 60%,#a47158 80%,#a58a79 100%);
-background: -o-linear-gradient(-45deg,  #ff364f 0%,#f8c836 20%,#66c486 40%,#4687fb 60%,#a47158 80%,#a58a79 100%);
-background: -ms-linear-gradient(-45deg,  #ff364f 0%,#f8c836 20%,#66c486 40%,#4687fb 60%,#a47158 80%,#a58a79 100%);
-background: linear-gradient(135deg,  #ff364f 0%,#f8c836 20%,#66c486 40%,#4687fb 60%,#a47158 80%,#a58a79 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff364f', endColorstr='#a58a79',GradientType=1 );}
-header nav ul li.tumblr {background:rgba(45,70,97,.5); border-radius:3px;}
-header nav ul li.tumblr:hover {background:rgba(45,70,97,1);}
+header nav ul li a:hover {background:#666; box-shadow:0 3px 5px -4px #000;}
 
 /*sayfalama*/
 nav.paging {margin:30px 0;}
