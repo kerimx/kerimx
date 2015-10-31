@@ -12,6 +12,20 @@ if (homePage == 1) {
 	$('body').addClass('normalPage');
 	}
 	
+//functions
+//pageTop
+function pageTop(){
+	$('html, body').animate({scrollTop:0}, 600);
+}
+//menuOpen1
+function menuOpen1(){
+	$('body').addClass('menuOpened');
+}
+//menuOpen0
+function menuOpen0(){
+	$('body').removeClass('menuOpened');
+}
+	
 //masonry
 $(document).ready(function () {
   // init Masonry after all images have loaded
@@ -31,25 +45,22 @@ if ($('.asd').html().length < 15) $('.asd').addClass('hidden');*/
 //lightbox
 $('.photo figure > a, .photoset figure > a, article .lb').nivoLightbox({ keyboardNav: true });
 
-//pageTop
-function pageTop(){
-	$('html, body').animate({scrollTop:0}, 600);
-}
+//sayfa basi
 $('li.pageInfo > i').click(function(){
 	pageTop();
 });
 
 //mobil menu
-$('header nav > i').click(function(e) {
+$('header nav > a.siteMenu').click(function(e) {
 	e.stopPropagation();
-    if(!$('header nav').hasClass('open')){
-			$('header nav').addClass('open');
+    if(!$('body').hasClass('menuOpened')){
+			menuOpen1();
 		}else{
-			$('header nav').removeClass('open');
+			menuOpen0();
 			};
 });
 	$(document).click(function(){
-			$('header nav').removeClass('open');
+			menuOpen0();
 	});
 
 
