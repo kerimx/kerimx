@@ -105,7 +105,7 @@ footer {clear:both; visibility:hidden;}
 
 /*header*/
 header {padding-top:60px;}
-header nav {width: auto; background:#E24F4F; position:absolute; left:0; top:0; box-shadow:0 1px 4px -2px #000; z-index:30;}
+header nav {width: auto; background:#E24F4F; position:fixed; left:0; top:0; box-shadow:0 1px 4px -2px #000; z-index:30;}
 header nav > a, header nav > h1 > a {display:inline-block; padding: 12px 16px;}
 header nav > a.siteMenu {background:#555;}
 header nav > a > i.fa {font-size:28px; color:#fff;}
@@ -116,7 +116,7 @@ header nav > a.aboutMe:before {content:""; position:absolute; left:0; top:15%; h
 header nav > a.aboutMe i.fa {transform:rotate(17deg);}
 /*header menu*/
 header nav .sub {display:none;}
-.menuOpened header nav .sub {display:block;}
+.menuOpened header nav .sub {display:block; position:absolute;}
 header nav ul.m1 {}
 header nav ul li {display:block;}
 header nav ul li a {display:block; padding:10px 20px; font-size:16px; color:#fff; text-decoration:none !important; line-height:1.5; text-shadow:0 0 0 #000;}

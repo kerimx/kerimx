@@ -17,15 +17,21 @@ if (homePage == 1) {
 function pageTop(){
 	$('html, body').animate({scrollTop:0}, 600);
 }
-//menuOpen1
-function menuOpen1(){
-	$('body').addClass('menuOpened');
-}
-//menuOpen0
+//menuOpen
 function menuOpen0(){
 	$('body').removeClass('menuOpened');
 }
-	
+function menuOpen1(){
+	$('body').addClass('menuOpened');
+}
+//aboutMe
+function aboutMe0(){
+	$('body').removeClass('aboutMeOpened')
+}
+function aboutMe1(){
+	$('body').addClass('aboutMeOpened')
+}
+
 //masonry
 $(document).ready(function () {
   // init Masonry after all images have loaded
@@ -54,6 +60,7 @@ $('li.pageInfo > i').click(function(){
 $('header nav > a.siteMenu').click(function(e) {
 	e.stopPropagation();
     if(!$('body').hasClass('menuOpened')){
+			pageTop();
 			menuOpen1();
 		}else{
 			menuOpen0();
