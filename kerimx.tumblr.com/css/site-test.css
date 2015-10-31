@@ -107,11 +107,11 @@ footer {clear:both; visibility:hidden;}
 header {padding-top:60px;}
 header nav {width:270px; background:#E24F4F; position:absolute; left:0; top:0; box-shadow:0 1px 4px -2px #000; z-index:30;}
 header nav > a, header nav > h1 > a {display:inline-block; padding:10px;}
-header nav > a > i {font-size:28px; color:#fff;}
-header nav > a.siteMenu i {background:#555;}
+header nav > a.siteMenu {background:#555;}
+header nav > a > i.fa {font-size:28px; color:#fff;}
 header nav > h1 {display:inline-block; vertical-align:top; border-right:1px solid #fff;}
 header nav > h1 > a {font-size:20px; color:#fff; font-weight:500; text-decoration:none !important;}
-header nav > a.aboutMe i {transform:rotate(17deg);}
+header nav > a.aboutMe i.fa {transform:rotate(17deg);}
 /*header menu*/
 header nav sub {display:none;}
 .menuOpened header nav sub {display:block;}
