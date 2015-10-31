@@ -60,8 +60,8 @@ $('li.pageInfo > i').click(function(){
 $('header nav > a.siteMenu').click(function(e) {
 	e.stopPropagation();
     if(!$('body').hasClass('menuOpened')){
-			pageTop();
 			menuOpen1();
+						pageTop();
 		}else{
 			menuOpen0();
 			};
