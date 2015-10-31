@@ -1,12 +1,13 @@
 * { -moz-box-sizing:border-box; 
 	-webkit-box-sizing:border-box; 
 	box-sizing:border-box;
-	font-family:roboto; font-size:14px; color:#333; font-weight:normal; font-style:normal; line-height:1.5; text-align:left; margin:0; padding:0; border:none; outline:none; text-decoration:none; list-style:none; transition:all 0.2s ease-in-out;}
+	font-family:roboto; font-size:14px; color:#333; font-weight:normal; font-style:normal; line-height:1.5; text-align:left; margin:0; padding:0; border:none; outline:none; text-decoration:none; list-style:none;}
 
 ::selection {background: #E24F4F; color: #FFFFFF; text-shadow: 0 1px 3px #000000;}
 ::-moz-selection {background: #E24F4F; color: #FFFFFF; text-shadow: 0 1px 3px #000000;}
 
-body {background:url(//kerimx.net/kerimx.tumblr.com/images/bg.jpg) no-repeat fixed center bottom #fff;}
+body {background:#fff;}
+body.homePage, body.normalPage {background:url(//kerimx.net/kerimx.tumblr.com/images/bg.jpg) no-repeat fixed center bottom #fff;}
 
 .clearfix:after {content:"."; display:block; clear:both; visibility:hidden; height:0; line-height:0;}
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {display:block;}
@@ -25,44 +26,52 @@ p {margin:7px 0;}
 .hidden {display:none !important;}
 .mt10 {margin-top:10px;} .mr10 {margin-right:10px;} .mb10 {margin-bottom:10px;} .ml10 {margin-left:10px;}
 
+/*animate*/
+.animate350, header nav ul li, a.url, article > .box, nav.paging ul.p1 > li > a {-webkit-transition: all 350ms ease; transition: all 350ms ease;}
+
 
 .container {width:100%;}
+.maxW {width:96%; max-width:1078px; margin:0 auto;}
 
-article h4, article h4 > * {font-size:24px;}
-article > h4 > a, article p a {text-decoration:underline;}
+article h4, article h4 > * {font-size:22px; font-weight:500;}
+article h4 > a, article p a {text-decoration:underline;}
 article p, article p *, article cite, article ul li, article ul li * {font-size:18px;}
 figure figcaption {margin-top:10px;}
+blockquote {border-left:3px solid; padding:0 10px;}
 blockquote footer {text-align:right;}
 blockquote cite, blockquote cite * {font-style:italic;}
 blockquote cite:before {content:"\f10d"; padding-right:5px; font-family:FontAwesome;}
 blockquote cite:after {content:"\f10e"; padding-left:5px; font-family:FontAwesome;}
 
 /*moduls*/
-.box {padding:13px; background:rgba(255,255,255,.7); border-width:1px 1px 5px 1px; border-style:solid; border-color:#ccc #ccc #bdbdbd; position:relative; border-radius:2px;}
+.box {position:relative; padding:13px; background:rgba(255,255,255,.7); border-width:1px 1px 5px 1px; border-style:solid; border-color:#ccc #ccc #bdbdbd; border-radius:2px;}
 /*liste1 menü*/
 ul.l1 li a {font-size:16px;}
 ul.l1 li a:before {content:"\f0da"; font-family:FontAwesome; color:#bdbdbd; display:inline-block; vertical-align:middle; margin-right:7px;}
 ul.l1 li a:hover, ul.l1 li a:hover:before {color:#E24F4F;}
 
 /*post*/
-.posts {max-width:1100px; margin:0 auto;}
-.posts > article {margin-top:15px; margin-bottom:15px; overflow:hidden; padding-bottom:50px;}
+.posts {width:98%; max-width:1100px;}
+.posts > article {display:inline-block; vertical-align:top; margin-top:15px; margin-bottom:15px; overflow:hidden;}
 .posts > article, .grid-sizer {width:48%; margin-right:1%; margin-left:1%;}
-.posts > article > a.url {display:block; background:#a6a6a6; white-space:nowrap; padding:7px 40px 7px 10px; font-size:13px; color:#fff; line-height:1; position:absolute; right:0; bottom:7px;}
-.posts > article > .tags {display:none;}
+.posts > article > .box {padding-bottom:50px;}
+.posts > article > .box > a.url {display:block; background:#a6a6a6; white-space:nowrap; padding:7px 40px 7px 10px; font-size:13px; color:#fff; line-height:1; position:absolute; right:0; bottom:7px;}
+.posts > article > .box > .tags {display:none;}
 /*post hover*/
-.posts > article:hover {border-color:#E24F4F;}
-.posts > article:hover > a.url {background:#E24F4F;}
-.posts > article > a.url:after {content:"\f0c1"; font-family:FontAwesome; position:absolute; right:15px; color:#fefefe;}
-.posts > article:hover > a.url:after {color:#fff;}
+.posts > article:hover > .box {border-color:#E24F4F;}
+.posts > article:hover > .box > a.url {background:#E24F4F;}
+.posts > article > .box > a.url:after {content:"\f0c1"; font-family:FontAwesome; position:absolute; right:15px; color:#fefefe;}
+.posts > article:hover > .box > a.url:after {color:#fff;}
 /*post detay .postPage*/
-.postPage .posts > article {border-color:#E24F4F;}
-.postPage .posts > article > a.url {background:#E24F4F;}
-/*post değilse .k*/
-.posts > article.k a.url {display:none;}
-.posts > article.k {padding-bottom:0;}
+.postPage .posts > article > .box {border-color:#E24F4F;}
+.postPage .posts > article > .box > a.url {background:#E24F4F;}
 /*soru sayfası .askPage*/
-.askPage .posts > article {border-color:#E24F4F;}
+.askPage .posts > article {width:100%;}
+.askPage .posts > article > .box {border-color:#E24F4F;}
+/*sayfa icindeki post değilse .k*/
+.posts > article.k {width:98%;}
+.posts > article.k > .box {padding-bottom:0;}
+.posts > article.k > .box a.url {display:none;}
 
 /*post type cfg*/
 /*video*/
@@ -70,12 +79,12 @@ ul.l1 li a:hover, ul.l1 li a:hover:before {color:#E24F4F;}
 /*chat*/
 .chat ul li b {color:#999; text-decoration:underline; font-weight:normal;}
 /*photoset*/
-.photoset > figure {margin-top:-2%;}
-.photoset > figure > a {display:inline-block; width:49%; margin-top:2%; vertical-align:top; position:relative; height:200px; background-size:cover; background-position:center center; background-repeat:no-repeat;}
-.photoset > figure > a:nth-child(even) {margin-left:2%;}
-.photoset > figure > a > b {font-size:16px; color:#fff; font-weight:normal; line-height:1.2; text-shadow:1px 1px 1px #000; width:100%; padding:7px; position:absolute; left:0; bottom:0; background-color:rgba(0,0,0,.7); overflow:hidden; max-height:100%; border-top:1px dotted #e24f4f;}
-.photoset > figure > a > b * {color:#fff;}
-.photoset > figure > a:hover > b {height:0; opacity:0; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";}
+.photoset > .box > figure {margin-top:-2%;}
+.photoset > .box > figure > a {display:inline-block; width:49%; margin-top:2%; vertical-align:top; position:relative; height:200px; background-size:cover; background-position:center center; background-repeat:no-repeat;}
+.photoset > .box > figure > a:nth-child(even) {margin-left:2%;}
+.photoset > .box > figure > a > b {font-size:16px; color:#fff; font-weight:normal; line-height:1.2; text-shadow:1px 1px 1px #000; width:100%; padding:7px; position:absolute; left:0; bottom:0; background-color:rgba(0,0,0,.7); overflow:hidden; max-height:100%; border-top:1px dotted #e24f4f;}
+.photoset > .box > figure > a > b * {color:#fff;}
+.photoset > .box > figure > a:hover > b {height:0; opacity:0; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";}
 
 /*aside*/
 .kx100 {float:right; width:342px;}
@@ -92,15 +101,15 @@ ul.l1 li a:hover, ul.l1 li a:hover:before {color:#E24F4F;}
 /*footer*/
 footer {clear:both; visibility:hidden;}
 
-/*maxW*/
-.maxW {width:98%; max-width:1078px; margin:0 auto;}
-
 /*header*/
 header {padding-top:60px;}
-header nav {width:100%; background:#E24F4F; position:fixed; left:0; top:0; box-shadow:0 1px 4px -2px #000; z-index:30;}
+header nav {width:270px; background:#E24F4F; position:fixed; left:0; top:0; box-shadow:0 1px 4px -2px #000; z-index:30;}
+header nav > a {display:inline-block; padding:10px;}
+header nav > a.siteMenu i {font-size:28px; color:#fff;}
+header nav > a.aboutMe i {font-size:28px; color:#fff; transform:rotate(27deg);}
 header nav ul.m1 {float:left;}
 header nav ul.social {float:right;}
-header nav ul li {float:left; border-right:1px solid #f1f1f1; transition:background 0.2s ease-in-out;}
+header nav ul li {float:left; border-right:1px solid #f1f1f1;}
 header nav ul li:first-child {border-left:1px solid #f1f1f1;}
 header nav ul li a {display:block; padding:10px 20px; font-size:14px; color:#fff; text-decoration:none !important; line-height:1.5;}
 header nav ul.social li a {text-shadow:0 0 10px #fff;}
@@ -119,7 +128,7 @@ header nav ul li.tumblr {background:rgba(45,70,97,.5); border-radius:3px;}
 header nav ul li.tumblr:hover {background:rgba(45,70,97,1);}
 
 /*sayfalama*/
-nav.paging {margin:20px 0;}
+nav.paging {margin:30px 0;}
 nav.paging ul.p1 {width:100%; display:table; table-layout:fixed; border:1px solid #ccc; background:rgba(255,255,255,.7);}
 nav.paging ul.p1 > li {display:table-cell; vertical-align:middle; text-align:center;}
 nav.paging ul.p1 > li.pageInfo {position:relative; font-size:1em; color:#666; font-weight:500; letter-spacing:1px; margin-right:-1px; background:#f1f1f1;}
@@ -172,29 +181,29 @@ nav.paging ul.p1 > li > a:hover {box-shadow:0px 10px 20px #eee inset;}
 .nivo-lightbox-open > a.nivo-lightbox-nav:hover > i, .nivo-lightbox-open > a.nivo-lightbox-close:hover > i { text-shadow: 0 0 2px #fff; }
 .nivo-lightbox-close > i { font-size: 30px; color: #fff; }
 
-@media screen and (min-width: 551px) {/*pc*/
+@media screen and (min-width: 601px) {/*pc*/
 /*header pc*/
 header nav ul li.tumblr {position:fixed; right:11px; top:60px; border-right:none; box-shadow:1px 1px 5px -3px #000 inset;}
 header nav ul li.tumblr > a {background:url("https://secure.assets.tumblr.com/images/iframe_logo.png") no-repeat scroll 10px center; width:100px; height:34px; padding:0; text-indent:-999em;}
 header nav ul li.tumblr > a:after {text-indent:0; content:"\f067"; padding-left:5px; font-family:FontAwesome; color:#fff; text-shadow:0 0 7px #fff; position:absolute; right:10px; top:8px;}
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
 .noPc {display:inline-block !important;}
 body {background:#fff !important;}
-.container > * {width:100%; float:none;}
+.maxW {width:96%;}
+.box {padding:10px;}
+
 header nav ul.m1 li:first-child {border-left:none;}
 header nav ul.social li:last-child {border-right:none;}
 
-.box {padding:10px;}
+.posts {height:auto !important;}
+.posts > article, .grid-sizer {display:block; position:static !important; width:100%; max-width:522px; margin-right:auto; margin-left:auto;}
 
-.posts {padding:0 10px;}
-.posts > article, .grid-sizer {position:static !important; width:100%; margin-right:0; margin-left:0;}
-
-/*menü 550px*/
+/*menü 600px*/
 header nav > i.fa {display:table !important; margin:0 auto; padding:10px; cursor:pointer; font-size:1.5em; color:#fff;}
 header nav.open > i.fa:before {content:"\f00d";}
-header nav > section {display:none; padding:10px 5px;}
+header nav > section {display:none; padding:10px 0;}
 header nav.open > section {display:block;}
 header nav ul {float:none !important;}
 header nav ul.m1 {margin-bottom:15px;}
@@ -219,3 +228,6 @@ header nav ul li.tumblr {background:rgba(45,70,97,1);}
 body * {display:none;}
 body:before {content:"hesap makinesi detected !!!11"; font-family:arial; font-size:2em;}
 }
+
+/*sil*/
+.video {display:none !important;}

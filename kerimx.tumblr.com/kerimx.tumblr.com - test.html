@@ -1,0 +1,192 @@
+<!--<!DOCTYPE html>-->
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{block:PostTitle}{PostTitle} - {/block:PostTitle}{Title}</title>
+  <meta name="description" content="yemelik beyin" />
+  <meta name="keywords" content="kerimx, kerim nadir karsavran" />
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" type="text/css" href="//kerimx.net/upload/css/ie8.css"/>
+  <![endif]-->
+  <meta id="myViewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <meta name="theme-color" content="#cc4747">
+  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Roboto:400,500&subset=latin,latin-ext'>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//kerimx.net/kerimx.tumblr.com/css/site-test.css"/>
+  <link rel="shortcut icon" href="//kerimx.net/upload/images/favicon.ico" type="image/x-icon"/>
+  <meta name="google-site-verification" content="sjH0apvZ4QLUZmTzB2JN-yTb9UFPpCD_wbJbb2epCXQ"/>
+  <style type="text/css">{CustomCSS}</style>
+</head>
+
+<body>
+  <section class="container">
+    <header>
+      <nav>
+      <a class="siteMenu" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+  <h1><a href="/">{Title}</a></h1>
+  <a class="aboutMe" href="javascript:void(0);"><i class="fa fa-question"></i></a>
+  <section class="sub">
+    <ul class="m1">
+      <li class="home"><a href="/">blog</a></li>
+      <li class="askMe"><a href="/ask">soru vb..</a></li>
+      {block:Pages}
+      <li><a target="_blank" href="{URL}">{Label}</a></li>
+      {/block:Pages}
+    </ul>
+    <ul class="social">
+      <li class="facebook"><a target="_blank" href="http://facebook.com/kerimx">facebook</a></li>
+      <li class="twitter"><a target="_blank" href="http://twitter.com/kerimx">twitter</a></li>
+      <li class="instagram"><a target="_blank" href="http://instagram.com/_kerim">instagram</a></li>
+      <li class="tumblr"><a target="_blank" href="https://www.tumblr.com/follow/kerimx">tumblr 'da takip et</a></li>
+    </ul>
+  </section>
+</nav>
+
+    </header>
+    
+       <aside class="kx100">
+            <section class="clearfix box profile">
+              <figure>
+                <img src="//kerimx.net/upload/images/profile.jpg">
+                <figcaption>{Description}</figcaption>
+              </figure>
+            </section>
+            {block:Pages}<section class="clearfix box pageMenu"><ul class="l1"><li><a target="_blank" href="{URL}">{Label}</a></li></ul></section>{/block:Pages}
+       </aside>
+        
+    <section class="maxW clearfix posts">
+	  <div class="grid-sizer"></div>
+    {block:Posts}
+    
+      {block:Text}
+      <article class="k{PostID} {PostType}"><section class="clearfix box">
+        {block:Title}<h4>{Title}</h4>{/block:Title}
+        {Body}
+        {block:HasTags}<section class="tags">{block:Tags}<a href="{TagURL}">{Tag}</a> {/block:Tags}</section>{/block:HasTags}
+        <a class="url" href="{Permalink}">{block:Date}{DayOfMonthWithZero} {Month} {Year} {DayOfWeek} - {24HourWithZero}:{Minutes}{/block:Date}</a>
+      </section></article>
+      {/block:Text}
+
+      {block:Photo}
+      <article class="k{PostID} {PostType}"><section class="clearfix box">
+        <figure>
+          <a href="{PhotoURL-HighRes}"><img src="{PhotoURL-500}"></a>
+          {block:Caption}<figcaption>{Caption}</figcaption>{/block:Caption}
+        </figure>
+        {block:HasTags}<section class="tags">{block:Tags}<a href="{TagURL}">{Tag}</a> {/block:Tags}</section>{/block:HasTags}
+        <a class="url" href="{Permalink}">{block:Date}{DayOfMonthWithZero} {Month} {Year} {DayOfWeek} - {24HourWithZero}:{Minutes}{/block:Date}</a>
+      </section></article>
+      {/block:Photo}
+
+      {block:Panorama}
+      <article class="k{PostID} {PostType}rama"><section class="clearfix box">
+        <figure>
+          {LinkOpenTag}<img src="{PhotoURL-500}">{LinkCloseTag}
+          {block:Caption}<figcaption>{Caption}</figcaption>{/block:Caption}
+        </figure>
+        {block:HasTags}<section class="tags">{block:Tags}<a href="{TagURL}">{Tag}</a> {/block:Tags}</section>{/block:HasTags}
+        <a class="url" href="{Permalink}">{block:Date}{DayOfMonthWithZero} {Month} {Year} {DayOfWeek} - {24HourWithZero}:{Minutes}{/block:Date}</a>
+      </section></article>
+      {/block:Panorama}
+
+      {block:Photoset}
+      <article class="k{PostID} {PostType}set col{PhotosetLayout}"><section class="clearfix box">
+        <figure class="clearfix">
+          {block:Photos}<a style="background-image:url({PhotoURL-250});" data-lightbox-gallery="g{postID}" href="{PhotoURL-HighRes}">{block:Caption}<b>{Caption}</b>{/block:Caption}</a>{/block:Photos}
+          {block:Caption}<figcaption>{Caption}</figcaption>{/block:Caption}
+        </figure>
+        {block:HasTags}<section class="tags">{block:Tags}<a href="{TagURL}">{Tag}</a> {/block:Tags}</section>{/block:HasTags}
+        <a class="url" href="{Permalink}">{block:Date}{DayOfMonthWithZero} {Month} {Year} {DayOfWeek} - {24HourWithZero}:{Minutes}{/block:Date}</a>
+      </section></article>
+      {/block:Photoset}
+
+      {block:Quote}
+      <article class="k{PostID} {PostType}"><section class="clearfix box">
+        <blockquote>
+          <h4>{Quote}</h4>
+          {block:Source}<footer>
+          <cite>{Source}</cite>
+          </footer>{/block:Source}
+        </blockquote>
+        {block:HasTags}<section class="tags">{block:Tags}<a href="{TagURL}">{Tag}</a> {/block:Tags}</section>{/block:HasTags}
+        <a class="url" href="{Permalink}">{block:Date}{DayOfMonthWithZero} {Month} {Year} {DayOfWeek} - {24HourWithZero}:{Minutes}{/block:Date}</a>
+      </section></article>
+      {/block:Quote}
+
+      {block:Link}
+      <article class="k{PostID} {PostType}"><section class="clearfix box">
+        <h4><a target="_blank" href="{URL}">{Name}</a></h4>
+        {block:Description}{Description}{/block:Description}
+        {block:HasTags}<section class="tags">{block:Tags}<a href="{TagURL}">{Tag}</a> {/block:Tags}</section>{/block:HasTags}
+        <a class="url" href="{Permalink}">{block:Date}{DayOfMonthWithZero} {Month} {Year} {DayOfWeek} - {24HourWithZero}:{Minutes}{/block:Date}</a>
+      </section></article>
+      {/block:Link}
+
+      {block:Chat}
+      <article class="k{PostID} {PostType}"><section class="clearfix box">
+        {block:Title}<h4>{Title}</h4>{/block:Title}
+        <ul>{block:Lines}<li class="{Alt}">{block:Label}<b>{Label}</b>{/block:Label} {Line}</li>{/block:Lines}</ul>
+        {block:HasTags}<section class="tags">{block:Tags}<a href="{TagURL}">{Tag}</a> {/block:Tags}</section>{/block:HasTags}
+        <a class="url" href="{Permalink}">{block:Date}{DayOfMonthWithZero} {Month} {Year} {DayOfWeek} - {24HourWithZero}:{Minutes}{/block:Date}</a>
+      </section></article>
+      {/block:Chat}
+
+      {block:Audio}
+      <article class="k{PostID} {PostType}"><section class="clearfix box">
+        {AudioPlayerWhite}
+        {block:Caption}{Caption}{/block:Caption}
+        {block:HasTags}<section class="tags">{block:Tags}<a href="{TagURL}">{Tag}</a> {/block:Tags}</section>{/block:HasTags}
+        <a class="url" href="{Permalink}">{block:Date}{DayOfMonthWithZero} {Month} {Year} {DayOfWeek} - {24HourWithZero}:{Minutes}{/block:Date}</a>
+      </section></article>
+      {/block:Audio}
+
+      {block:Video}
+      <article class="k{PostID} {PostType}"><section class="clearfix box">
+        {Video-500}
+        {block:Caption}{Caption}{/block:Caption}
+        {block:HasTags}<section class="tags">{block:Tags}<a href="{TagURL}">{Tag}</a> {/block:Tags}</section>{/block:HasTags}
+        <a class="url" href="{Permalink}">{block:Date}{DayOfMonthWithZero} {Month} {Year} {DayOfWeek} - {24HourWithZero}:{Minutes}{/block:Date}</a>
+      </section></article>
+      {/block:Video}
+
+      {block:Answer}
+      <article class="k{PostID} {PostType}"><section class="clearfix box">
+        <blockquote>
+          <h4>{Question}</h4>
+          <footer><cite>{Asker}</cite></footer>
+        </blockquote>
+        <p>{Answer}</p>
+        {block:HasTags}<section class="tags">{block:Tags}<a href="{TagURL}">{Tag}</a> {/block:Tags}</section>{/block:HasTags}
+        <a class="url" href="{Permalink}">{block:Date}{DayOfMonthWithZero} {Month} {Year} {DayOfWeek} - {24HourWithZero}:{Minutes}{/block:Date}</a>
+      </section></article>
+      {/block:Answer}
+
+    {/block:Posts}
+    
+    </section>
+      {block:Pagination}<nav class="paging"><section class="maxW clearfix"> <ul class="p1">
+        {block:PreviousPage}<li class="prev"><a href="{PreviousPage}"><i class="fa fa-chevron-left"></i></a></li>{/block:PreviousPage}
+        <li class="pageInfo">{CurrentPage}/{TotalPages} <i class="fa fa-angle-double-up"></i></li>
+        {block:NextPage}<li class="next"><a href="{NextPage}"><i class="fa fa-chevron-right"></i></a></li>{/block:NextPage}
+      </ul> </section></nav></section>{/block:Pagination}
+
+  <footer>footer 'a ne yazim aq? öptüm :)</footer>
+
+  <script src="//kerimx.net/upload/js/jquery-2.1.4.min.js"></script>
+  <script src="//kerimx.net/upload/js/imagesloaded.pkgd.min.js"></script>
+  <script src="//kerimx.net/upload/js/masonry.pkgd.min.js"></script>
+  <script src='//kerimx.net/upload/js/nivo-lightbox.min.js'></script>
+  <script src='//kerimx.net/kerimx.tumblr.com/js/site.js'></script>
+  <!--<script src='//kerimx.net/upload/js/boom.js'></script>-->
+	<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        
+        ga('create', 'UA-49481006-2', 'kerimx.net');
+        ga('send', 'pageview');
+    </script>
+</section>
+</body>
+</html>
