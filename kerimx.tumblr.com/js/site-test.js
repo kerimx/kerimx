@@ -50,31 +50,16 @@ $('li.pageInfo > i').click(function(){
 	pageTop();
 });
 
-//mobil menu
+//menu
 $('header nav > a.siteMenu').click(function(e) {
-	e.stopPropagation();
+
     if(!$('body').hasClass('menuOpened')){
 			menuOpen1();
 		}else{
 			menuOpen0();
 			};
 });
-	$(document).click(function(){
-			menuOpen0();
-	});
 
-
-/*
-//mobil menu
-$('header nav > i').click(function(e) {
-	e.stopPropagation();
-    if(!$('header nav').hasClass('open')){
-			$('header nav').addClass('open');
-		}else{
-			$('header nav').removeClass('open');
-			};
+$(document).click(function(){
+		menuOpen0();
 });
-	$(document).click(function(){
-			$('header nav').removeClass('open');
-	});
-*/
