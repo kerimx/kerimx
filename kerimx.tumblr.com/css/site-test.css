@@ -116,11 +116,13 @@ header nav > a.aboutMe:before {content:""; position:absolute; left:0; top:15%; h
 header nav > a.aboutMe i.fa {transform:rotate(17deg);}
 /*header menu*/
 header nav .sub {display:none;}
-.menuOpened header nav .sub {display:block; position:absolute;}
 header nav ul.m1 {}
 header nav ul li {display:block;}
 header nav ul li a {display:block; padding:10px 20px; font-size:16px; color:#fff; text-decoration:none !important; line-height:1.5; text-shadow:0 0 0 #000;}
 header nav ul li a:hover {background:#555; text-shadow:1px 1px 17px #fff;}
+
+.menuOpened header nav {position:absolute;}
+.menuOpened header nav .sub {display:block;}
 
 /*fadeIn >> dis:none; opa:0; -webkit-animation:fadeIn 5s; animation:fadeIn 5s;*/
 @-webkit-keyframes fadeIn {0% {display:block;} 1% {opacity:0;}	100% {opacity:1;}}
