@@ -32,9 +32,26 @@ if ($('.asd').html().length < 15) $('.asd').addClass('hidden');*/
 $('.photo figure > a, .photoset figure > a, article .lb').nivoLightbox({ keyboardNav: true });
 
 //pageTop
-$('li.pageInfo > i').click(function(){
+function pageTop(){
 	$('html, body').animate({scrollTop:0}, 600);
+}
+$('li.pageInfo > i').click(function(){
+	pageTop();
 });
+
+//mobil menu
+$('header nav > i').click(function(e) {
+	e.stopPropagation();
+    if(!$('header nav').hasClass('open')){
+			$('header nav').addClass('open');
+		}else{
+			$('header nav').removeClass('open');
+			};
+});
+	$(document).click(function(){
+			$('header nav').removeClass('open');
+	});
+
 
 /*
 //mobil menu
