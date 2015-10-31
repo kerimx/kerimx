@@ -27,8 +27,8 @@
   <a class="aboutMe" href="javascript:void(0);"><i class="fa fa-question"></i></a>
   <section class="sub">
     <ul class="m1">
-      <li class="home"><a href="/">blog</a></li>
-      {block:AskEnabled}{AskLabel}{/block:AskEnabled}
+      <li class="home"><a href="{BlogURL}">blog</a></li>
+      {block:AskEnabled}<li class="askMe"><a href="/ask">{AskLabel}</a></li>{/block:AskEnabled}
       {block:Pages}
       <li><a target="_blank" href="{URL}">{Label}</a></li>
       {/block:Pages}
@@ -170,10 +170,7 @@
         {block:NextPage}<li class="next"><a href="{NextPage}"><i class="fa fa-chevron-right"></i></a></li>{/block:NextPage}
       </ul> </section></nav>{/block:Pagination}
       
-	<div class="test1">{Description}</div>
-	<div class="test2">{MetaDescription}</div>
-   	<div class="test3">{Favicon}</div>
-    <div class="test4">{HeaderImage}</div>
+	<section class="aboutMePage"><img src="{HeaderImage}">{Description}</section>
       </section>
       
 
