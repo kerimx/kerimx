@@ -52,7 +52,7 @@ $('li.pageInfo > i').click(function(){
 
 //menu
 $('header nav > a.siteMenu').click(function(e) {
-
+	e.stopPropagation();
     if(!$('body').hasClass('menuOpened')){
 			menuOpen1();
 		}else{
