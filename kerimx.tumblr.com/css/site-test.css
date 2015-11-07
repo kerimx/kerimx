@@ -64,7 +64,7 @@ ul.l1 li a:hover, ul.l1 li a:hover:before {color:#E24F4F;}
 .posts > article > .box > a.url:after {content:"\f0c1"; font-family:FontAwesome; position:absolute; right:15px; color:#fefefe;}
 .posts > article:hover > .box > a.url:after {color:#fff;}
 /*post detay .postPage*/
-.postPage .posts > article {left:25% !important; width:100%; max-width:500px;}
+.postPage .posts > article {width:100%; max-width:528px; left:50% !important; margin-left:-264px;}
 .postPage .posts > article > .box {border-color:#E24F4F;}
 .postPage .posts > article > .box > a.url {background:#E24F4F;}
 /*soru sayfası .askPage*/
@@ -110,7 +110,8 @@ footer {clear:both; visibility:hidden;}
 /*header*/
 header {padding-top:60px;}
 header nav {width: auto; background:#E24F4F; position:fixed; left:0; top:0; box-shadow:0 1px 4px -2px #000; z-index:30;}
-header nav > a, header nav > h1 > a {display:inline-block; padding: 12px 16px;}
+header nav > a, header nav > h1 {display:inline-block;}
+header nav > a, header nav > h1 > a {padding: 12px 16px;}
 header nav > a.siteMenu {background:#555;}
 header nav > a > i.fa {font-size:28px; color:#fff; width:24px; text-align:center;}
 header nav > h1 {display:inline-block; vertical-align:top;}
