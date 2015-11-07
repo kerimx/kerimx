@@ -137,9 +137,9 @@ header nav ul li a:hover {background:#555; text-shadow:1px 1px 17px #fff;}
 
 /*profil*/
 .aboutMePage {display:none;}
-.aboutMePage > .left {max-width:50%;}
+.aboutMePage > .left {width:300px;}
 .aboutMePage .imgProfile {display:block;}
-.aboutMePage > .contentA {margin-left:50%; padding:30px;}
+.aboutMePage > .contentA {margin-left:300px; padding:30px;}
 
 /*nivo lightbox*/
 .nivo-lightbox-overlay { position: fixed; top: 0; left: 0; z-index: 99998; width: 100%; height: 100%; overflow: hidden; visibility: hidden; opacity: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; background: rgba(0, 0, 0, 0.7); }
@@ -150,7 +150,7 @@ header nav ul li a:hover {background:#555; text-shadow:1px 1px 17px #fff;}
 .nivo-lightbox-title-wrap { position: absolute; bottom: 0; left: 0; width: 100%; z-index: 99999; text-align: center; }
 .nivo-lightbox-prev { position: absolute; top: 50%; left: -2px; }
 .nivo-lightbox-next { position: absolute; top: 50%; right: -2px; }
-.nivo-lightbox-close { position: absolute; top: 3%; right: 3%; background: #e24f4f; padding: 5px; border-radius: 5px; }
+.nivo-lightbox-close { position: absolute; top: 3%; right: 3%; background: #e24f4f; padding: 5px 7px; border-radius: 5px;}
 .nivo-lightbox-nav { display: none; background: #e24f4f; width: 40px; height: 70%; top: 15%; border-radius: 3px; }
 .nivo-lightbox-image { text-align: center; }
 .nivo-lightbox-image img { max-width: 100%; max-height: 100%; width: auto; height: auto; vertical-align: middle; box-shadow: 0 0 50px #000; }
