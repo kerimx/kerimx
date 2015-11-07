@@ -138,9 +138,8 @@ header nav ul li a:hover {background:#555; text-shadow:1px 1px 17px #fff;}
 /*profil*/
 .aboutMePage {display:none;}
 .aboutMePage > .left {max-width:50%;}
+.aboutMePage .imgProfile {display:block;}
 .aboutMePage > .contentA {margin-left:50%; padding:30px;}
-
-
 
 /*nivo lightbox*/
 .nivo-lightbox-overlay { position: fixed; top: 0; left: 0; z-index: 99998; width: 100%; height: 100%; overflow: hidden; visibility: hidden; opacity: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; background: rgba(0, 0, 0, 0.7); }
@@ -184,7 +183,7 @@ header nav ul li a:hover {background:#555; text-shadow:1px 1px 17px #fff;}
 .nivo-lightbox-close > i { font-size: 30px; color: #fff; }
 
 /*lightbox tema*/
-.nivo-lightbox-theme-default .nivo-lightbox-ajax, .nivo-lightbox-theme-default .nivo-lightbox-inline {background:#fff;}
+.nivo-lightbox-theme-default .nivo-lightbox-ajax, .nivo-lightbox-theme-default .nivo-lightbox-inline {background:#fff; box-shadow:0 0 50px #000;}
 
 @media screen and (min-width: 601px) {/*pc*/
 .amk {}
