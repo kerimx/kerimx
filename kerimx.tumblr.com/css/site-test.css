@@ -64,15 +64,14 @@ ul.l1 li a:hover, ul.l1 li a:hover:before {color:#E24F4F;}
 .posts > article > .box > a.url:after {content:"\f0c1"; font-family:FontAwesome; position:absolute; right:15px; color:#fefefe;}
 .posts > article:hover > .box > a.url:after {color:#fff;}
 /*post detay .postPage*/
-.postPage .posts > article {left:25% !important;}
+.postPage .posts > article {left:25% !important; width:100%; max-width:500px;}
 .postPage .posts > article > .box {border-color:#E24F4F;}
 .postPage .posts > article > .box > a.url {background:#E24F4F;}
 /*soru sayfası .askPage*/
-.askPage .posts > article {width:100%;}
-.askPage .posts > article > .box {border-color:#E24F4F;}
+.askPage .posts > article {}
 /*sayfa icindeki post değilse .k*/
-.posts > article.k {width:98%;}
-.posts > article.k > .box {padding-bottom:0;}
+.posts > article.k {width:100%; margin-left:0; margin-right:0;}
+.posts > article.k > .box {padding-bottom:0; border-color:#E24F4F;}
 .posts > article.k > .box a.url {display:none;}
 
 /*post type cfg*/
