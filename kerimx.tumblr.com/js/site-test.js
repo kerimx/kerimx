@@ -49,7 +49,7 @@ $(document).ready(function () {
 if ($('.asd').html().length < 15) $('.asd').addClass('hidden');*/
 	
 //lightbox
-$('.photo figure > a, .photoset figure > a, article .lb').nivoLightbox({ keyboardNav: true });
+$('.photo figure > a, .photoset figure > a, .lb').nivoLightbox({ keyboardNav: true });
 
 //sayfa basi
 $('li.pageInfo > i').click(function(){
