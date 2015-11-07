@@ -28,7 +28,7 @@ p {margin:7px 0;}
 .mt10 {margin-top:10px;} .mr10 {margin-right:10px;} .mb10 {margin-bottom:10px;} .ml10 {margin-left:10px;}
 
 /*animate*/
-.animate350, header nav ul li a, a.url, article > .box, nav.paging ul.p1 > li > a {-webkit-transition: all 350ms ease; transition: all 350ms ease;}
+.animate350, header nav ul li a, a.url, article > .box, nav.paging ul.p1 > li > a, .aboutMePage .socialHolder a {-webkit-transition: all 350ms ease; transition: all 350ms ease;}
 
 
 .container {width:100%;}
@@ -135,8 +135,7 @@ header nav ul li a > i.fa {color:inherit; line-height:inherit; width:18px; text-
 /*fadeIn >> dis:none; opa:0; -webkit-animation:fadeIn 5s; animation:fadeIn 5s;*/
 @-webkit-keyframes fadeIn {0% {display:block;} 1% {opacity:0;}	100% {opacity:1;}}
 @keyframes fadeIn {0% {display:block;} 1% {opacity:0;} 100% {opacity:1;}}
-
-.asd {-webkit-animation:fadeIn 350ms forwards; animation:fadeIn 350ms forwards;}
+.test {-webkit-animation:fadeIn 350ms forwards; animation:fadeIn 350ms forwards;}
 
 /*profil*/
 .aboutMePage {display:none;}
@@ -147,7 +146,7 @@ header nav ul li a > i.fa {color:inherit; line-height:inherit; width:18px; text-
 .aboutMePage .socialHolder {}
 .aboutMePage .socialHolder > p:first-child {margin-bottom:20px;}
 .aboutMePage .socialHolder b {display:block; margin-bottom:3px;}
-.aboutMePage .socialHolder a {display:inline-block; border:1px solid #eee; border-radius:3px;}
+.aboutMePage .socialHolder a {display:inline-block; background:#fff; border:1px solid #ccc; border-radius:3px;}
 .aboutMePage .socialHolder a i {width:20px; text-align:center; margin:10px;}
 .aboutMePage .socialHolder a:hover {background:#eee;}
 
