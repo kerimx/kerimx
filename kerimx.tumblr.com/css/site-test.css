@@ -125,6 +125,7 @@ header nav ul.m1 {}
 header nav ul li {display:block;}
 header nav ul li a {display:block; padding:10px 20px; font-size:16px; color:#fff; text-decoration:none !important; line-height:1.5; text-shadow:0 0 0 #000;}
 header nav ul li a:hover {background:#555; text-shadow:1px 1px 17px #fff;}
+header nav ul li a > i {font-size:20px; color:#fff; line-height:1.5;}
 
 .menuOpened header nav {position:absolute;}
 .menuOpened header nav .sub {display:block;}
