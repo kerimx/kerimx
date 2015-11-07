@@ -21,22 +21,22 @@
 <body>
   <section class="container">
     <header>
-      <nav>
-      <a class="siteMenu" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
-  <h1><a href="/">{Title}</a></h1>
-  <a class="lb aboutMe" href="#aboutMePage" data-lightbox-type="inline"><i class="fa fa-question"></i></a>
-  <section class="sub">
-    <ul class="m1">
-      <li class="home"><a href="{BlogURL}"><i class="fa fa-home"></i>blog</a></li>
-      {block:AskEnabled}<li class="askMe"><a href="/ask"><i class="fa fa-commenting-o"></i>{AskLabel}</a></li>{/block:AskEnabled}
-      {block:Pages}
-      <li><a target="_blank" href="{URL}">{Label}</a></li>
-      {/block:Pages}
-    </ul>
-  </section>
-</nav>
-
-    </header>
+  <nav> <a class="siteMenu" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+    <h1><a href="/">{Title}</a></h1>
+    <a class="lb aboutMe" href="#aboutMePage" data-lightbox-type="inline"><i class="fa fa-question"></i></a>
+    <section class="sub">
+      <ul class="m1">
+        <li class="home"><a href="{BlogURL}"><i class="fa fa-home"></i>blog</a></li>
+        {block:AskEnabled}
+        <li class="askMe"><a href="/ask"><i class="fa fa-commenting-o"></i>{AskLabel}</a></li>
+        {/block:AskEnabled}
+        {block:Pages}
+        <li><a target="_blank" href="{URL}">{Label}</a></li>
+        {/block:Pages}
+      </ul>
+    </section>
+  </nav>
+</header>
     
     <section class="maxW clearfix posts">
 	  <div class="grid-sizer"></div>

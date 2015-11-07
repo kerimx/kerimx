@@ -114,8 +114,8 @@ header nav > a, header nav > h1 {display:inline-block;}
 header nav > a, header nav > h1 > a {padding: 12px 16px;}
 header nav > a.siteMenu {background:#555;}
 header nav > a > i.fa {font-size:28px; color:#fff; width:24px; text-align:center;}
-header nav > h1 {display:inline-block; vertical-align:top;}
-header nav > h1 > a {font-size:20px; color:#fff; font-weight:500; text-decoration:none !important;}
+header nav > h1 {}
+header nav > h1 > a {display:block; font-size:20px; color:#fff; font-weight:500; text-decoration:none !important;}
 header nav > a.aboutMe {position:relative;}
 header nav > a.aboutMe:before {content:""; position:absolute; left:0; top:15%; height:70%; border-left:1px dashed #fff;}
 header nav > a.aboutMe i.fa {transform:rotate(17deg);}
