@@ -138,7 +138,7 @@ header nav ul li a:hover {background:#555; text-shadow:1px 1px 17px #fff;}
 /*profil*/
 .aboutMePage {display:none;}
 .aboutMePage > .left {width:300px;}
-.aboutMePage .imgProfile {display:block;}
+.aboutMePage .imgProfile {display:block; height:200px;}
 .aboutMePage > .contentA {margin-left:300px; padding:0;}
 
 /*nivo lightbox*/
