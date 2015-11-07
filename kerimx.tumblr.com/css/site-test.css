@@ -206,7 +206,7 @@ body {background:#fff !important;}
 .box {padding:10px;}
 
 .posts {height:auto !important;}
-.posts > article, .grid-sizer {display:block; position:static !important; width:100%; max-width:522px; margin-right:auto !important; margin-left:auto !important;}
+.posts > article, .grid-sizer {display:block; position:static !important; width:100%; max-width:522px !important; margin-right:auto !important; margin-left:auto !important;}
 
 /*menü 600px*/
 header nav {width:100%;}
