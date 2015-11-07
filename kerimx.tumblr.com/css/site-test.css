@@ -71,7 +71,7 @@ ul.l1 li a:hover, ul.l1 li a:hover:before {color:#E24F4F;}
 .askPage .posts > article {}
 /*sayfa icindeki post değilse .k*/
 .posts > article.k {width:100%; margin-left:0; margin-right:0;}
-.posts > article.k > .box {padding-bottom:0; border-color:#E24F4F;}
+.posts > article.k > .box {border-color:#E24F4F;}
 .posts > article.k > .box a.url {display:none;}
 
 /*post type cfg*/
