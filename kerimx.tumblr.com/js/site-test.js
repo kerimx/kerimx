@@ -51,8 +51,6 @@ if ($('.asd').html().length < 15) $('.asd').addClass('hidden');*/
 //lightbox
 $('.photo figure > a, .photoset figure > a, .lb').nivoLightbox({ keyboardNav: true });
 
-$('a.aboutMe').nivoLightbox({ theme: 'mw500' });
-
 //sayfa basi
 $('li.pageInfo > i').click(function(){
 	pageTop();
