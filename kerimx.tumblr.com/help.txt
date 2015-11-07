@@ -1,9 +1,21 @@
----COVER---
+﻿---başlık---
+Kerim Nadir Karsavran
+
+---görsel---
+
+
+---açıklama---
+<p>bu tarz yerler genelde boş.</p>
+<div class="socialHolder">
+  <p><b>sosyallik derecem:</b> <a target="_blank" href="/facebook"><i class="fa fa-facebook"></i></a> <a target="_blank" href="/twitter"><i class="fa fa-twitter"></i></a> <a target="_blank" href="/instagram"><i class="fa fa-instagram"></i></a> <a target="_blank" href="/tumblr"><i class="fa fa-tumblr"></i></a> </p>
+  <p><b>iş güç:</b> <a target="_blank" href="/linkedin"><i class="fa fa-linkedin"></i></a> </p>
+</div>
+
+---cover---
 <p class="mb10">
 <a class="lb" href="1280.jpg" data-lightbox-gallery="g123123">
 <img src="500.jpg">
 </a>
 </p>
----COVER---
 
-
+---x---

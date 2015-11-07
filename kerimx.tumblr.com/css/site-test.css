@@ -123,7 +123,7 @@ header nav > a.aboutMe i.fa {transform:rotate(17deg);}
 header nav .sub {display:none;}
 header nav ul.m1 {}
 header nav ul li {display:block;}
-header nav ul li a {display:block; padding:10px 20px; font-size:16px; color:#fff; text-decoration:none !important; line-height:1.5; text-shadow:0 0 0 #000;}
+header nav ul li a {display:block; padding:10px 15px; font-size:16px; color:#fff; text-decoration:none !important; line-height:1.5; text-shadow:0 0 0 #000;}
 header nav ul li a:hover {background:#555; text-shadow:1px 1px 17px #fff;}
 header nav ul li a > i.fa {color:inherit; line-height:inherit; width:18px; text-align:center; margin-right:10px;}
 
@@ -215,7 +215,7 @@ header nav > a.aboutMe {float:right;}
 
 /*profil 600px*/
 .aboutMePage > .left {width:100%; float:none;}
-.aboutMePage > .contentA {margin-left:0;}
+.aboutMePage > .contentA {margin-left:0; padding:15px;}
 }
 
 @media screen and (max-width: 480px) {
