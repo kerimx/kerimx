@@ -220,7 +220,7 @@ header nav > a.aboutMe {float:right;}
 
 @media screen and (max-width: 480px) {
 /*lightbox 480px*/
-.nivo-lightbox-overlay .nivo-lightbox-wrap {top:0; right:1%; bottom:0; left:1%;}
+.nivo-lightbox-overlay .nivo-lightbox-wrap {top:0; right:2%; bottom:0; left:2%;}
 .nivo-lightbox-overlay .nivo-lightbox-nav {width:50%; height:50px; top:auto; bottom:-2px;}
 }
 
