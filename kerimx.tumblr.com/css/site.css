@@ -144,7 +144,7 @@ header nav ul li a > i.fa {color:inherit; line-height:inherit; width:18px; text-
 .aboutMePage > .contentA {margin-left:370px; padding:30px;}
 .aboutMePage > .contentA, .aboutMePage > .contentA * {font-size:18px;}
 .aboutMePage .socialHolder {}
-.aboutMePage .socialHolder > p:first-child {margin-bottom:20px;}
+.aboutMePage .socialHolder > p {margin-top:20px;}
 .aboutMePage .socialHolder b {display:block; margin-bottom:3px;}
 .aboutMePage .socialHolder a {display:inline-block; background:#fff; border:1px solid #ccc; border-radius:3px; margin-bottom:5px;}
 .aboutMePage .socialHolder a i {width:20px; text-align:center; margin:10px;}
