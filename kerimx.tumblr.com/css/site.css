@@ -1,3 +1,4 @@
+@charset "utf-8";
 * { -moz-box-sizing:border-box; 
 	-webkit-box-sizing:border-box; 
 	box-sizing:border-box;
@@ -9,7 +10,7 @@
 body {background:#fff;}
 body.homePage, body.normalPage {background:url(//kerimx.net/kerimx.tumblr.com/images/bg.jpg) no-repeat fixed center bottom #fff;}
 
-.clearfix:after {content:"."; display:block; clear:both; visibility:hidden; height:0; line-height:0;}
+.clearfix:after {content:" "; display:block; clear:both; visibility:hidden; height:0; line-height:0;}
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {display:block;}
 a:hover {text-decoration:underline;}
 b, strong {font-weight:500;}
@@ -27,7 +28,7 @@ p {margin:7px 0;}
 .mt10 {margin-top:10px;} .mr10 {margin-right:10px;} .mb10 {margin-bottom:10px;} .ml10 {margin-left:10px;}
 
 /*animate*/
-.animate350, header nav ul li, a.url, article > .box, nav.paging ul.p1 > li > a {-webkit-transition: all 350ms ease; transition: all 350ms ease;}
+.animate350, header nav ul li a, a.url, article > .box, nav.paging ul.p1 > li > a, .aboutMePage .socialHolder a {-webkit-transition: all 350ms ease; transition: all 350ms ease;}
 
 
 .container {width:100%;}
@@ -63,14 +64,14 @@ ul.l1 li a:hover, ul.l1 li a:hover:before {color:#E24F4F;}
 .posts > article > .box > a.url:after {content:"\f0c1"; font-family:FontAwesome; position:absolute; right:15px; color:#fefefe;}
 .posts > article:hover > .box > a.url:after {color:#fff;}
 /*post detay .postPage*/
+.postPage .posts > article {width:100%; max-width:528px; left:50% !important; margin-left:-264px;}
 .postPage .posts > article > .box {border-color:#E24F4F;}
 .postPage .posts > article > .box > a.url {background:#E24F4F;}
 /*soru sayfası .askPage*/
-.askPage .posts > article {width:100%;}
-.askPage .posts > article > .box {border-color:#E24F4F;}
+.askPage .posts > article {}
 /*sayfa icindeki post değilse .k*/
-.posts > article.k {width:98%;}
-.posts > article.k > .box {padding-bottom:0;}
+.posts > article.k {width:100%; margin-left:0; margin-right:0;}
+.posts > article.k > .box {border-color:#E24F4F;}
 .posts > article.k > .box a.url {display:none;}
 
 /*post type cfg*/
@@ -86,43 +87,9 @@ ul.l1 li a:hover, ul.l1 li a:hover:before {color:#E24F4F;}
 .photoset > .box > figure > a > b * {color:#fff;}
 .photoset > .box > figure > a:hover > b {height:0; opacity:0; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";}
 
-/*aside*/
-.kx100 {float:right; width:342px;}
-.kx100, .kx100 * {display:none !important;}
-
-/*profil*/
-.profile figure img {width:100%; box-shadow:0 2px 7px -2px #000;}
-.profile figure figcaption p {font-size:16px;}
-
 /*sayfalar*/
 .pageMenu {margin-top:30px;}
 .pageMenu ul.l1 li a  {line-height:2;}
-
-/*footer*/
-footer {clear:both; visibility:hidden;}
-
-/*header*/
-header {padding-top:60px;}
-header nav {width:100%; background:#E24F4F; position:fixed; left:0; top:0; box-shadow:0 1px 4px -2px #000; z-index:30;}
-header nav ul.m1 {float:left;}
-header nav ul.social {float:right;}
-header nav ul li {float:left; border-right:1px solid #f1f1f1;}
-header nav ul li:first-child {border-left:1px solid #f1f1f1;}
-header nav ul li a {display:block; padding:10px 20px; font-size:14px; color:#fff; text-decoration:none !important; line-height:1.5;}
-header nav ul.social li a {text-shadow:0 0 10px #fff;}
-header nav ul li:hover {background:#666; box-shadow:0 3px 5px -4px #000;}
-header nav ul li.facebook {background:#4C66A4;}
-header nav ul li.twitter {background:#55ACEE;}
-header nav ul li.instagram {background: #ff364f;
-background: -moz-linear-gradient(-45deg,  #ff364f 0%, #f8c836 20%, #66c486 40%, #4687fb 60%, #a47158 80%, #a58a79 100%);
-background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ff364f), color-stop(20%,#f8c836), color-stop(40%,#66c486), color-stop(60%,#4687fb), color-stop(80%,#a47158), color-stop(100%,#a58a79));
-background: -webkit-linear-gradient(-45deg,  #ff364f 0%,#f8c836 20%,#66c486 40%,#4687fb 60%,#a47158 80%,#a58a79 100%);
-background: -o-linear-gradient(-45deg,  #ff364f 0%,#f8c836 20%,#66c486 40%,#4687fb 60%,#a47158 80%,#a58a79 100%);
-background: -ms-linear-gradient(-45deg,  #ff364f 0%,#f8c836 20%,#66c486 40%,#4687fb 60%,#a47158 80%,#a58a79 100%);
-background: linear-gradient(135deg,  #ff364f 0%,#f8c836 20%,#66c486 40%,#4687fb 60%,#a47158 80%,#a58a79 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff364f', endColorstr='#a58a79',GradientType=1 );}
-header nav ul li.tumblr {background:rgba(45,70,97,.5); border-radius:3px;}
-header nav ul li.tumblr:hover {background:rgba(45,70,97,1);}
 
 /*sayfalama*/
 nav.paging {margin:30px 0;}
@@ -137,6 +104,52 @@ nav.paging ul.p1 > li > a > i {font-size:20px; color:#999; text-shadow:0 1px 1px
 nav.paging ul.p1 > li > a:hover, nav.paging ul.p1 > li > a:hover > i {color:#E24F4F; border-color:#E24F4F;}
 nav.paging ul.p1 > li > a:hover {box-shadow:0px 10px 20px #eee inset;}
 
+/*footer*/
+footer {clear:both; visibility:hidden;}
+
+/*header*/
+header {padding-top:60px;}
+header nav {width: auto; background:#E24F4F; position:fixed; left:0; top:0; box-shadow:0 1px 4px -2px #000; z-index:30;}
+header nav > a, header nav > h1 {display:inline-block; vertical-align:middle; margin-left:-4px;}
+header nav > a, header nav > h1 > a {padding: 12px 16px;}
+header nav > a.siteMenu {background:#555;}
+header nav > a > i.fa {font-size:28px; color:#fff;}
+header nav > a.siteMenu > i.fa {width:24px; text-align:center;}
+header nav > h1 > a {display:block; font-size:20px; color:#fff; font-weight:500; text-decoration:none !important;}
+header nav > a.aboutMe {position:relative;}
+header nav > a.aboutMe:before {content:""; position:absolute; left:0; top:15%; height:70%; border-left:1px dashed #fff;}
+header nav > a.aboutMe i.fa {transform:rotate(17deg);}
+/*header menu*/
+header nav .sub {display:none;}
+header nav ul.m1 {}
+header nav ul li {display:block;}
+header nav ul li a {display:block; padding:10px 15px; font-size:16px; color:#fff; text-decoration:none !important; line-height:1.5; text-shadow:0 0 0 #000;}
+header nav ul li a:hover {background:#555; text-shadow:1px 1px 17px #fff;}
+header nav ul li a > i.fa {color:inherit; line-height:inherit; width:18px; text-align:center; margin-right:10px;}
+
+.menuOpened header nav {position:absolute;}
+.menuOpened header nav .sub {display:block;}
+.menuOpened header nav .sub {}
+.menuOpened header nav > a.siteMenu > i.fa:before {content:"\f00d";}
+
+/*fadeIn >> dis:none; opa:0; -webkit-animation:fadeIn 5s; animation:fadeIn 5s;*/
+@-webkit-keyframes fadeIn {0% {display:block;} 1% {opacity:0;}	100% {opacity:1;}}
+@keyframes fadeIn {0% {display:block;} 1% {opacity:0;} 100% {opacity:1;}}
+.test {-webkit-animation:fadeIn 350ms forwards; animation:fadeIn 350ms forwards;}
+
+/*profil*/
+.aboutMePage {display:none;}
+.aboutMePage > .left {width:370px;}
+.aboutMePage .imgProfile {display:block;}
+.aboutMePage > .contentA {margin-left:370px; padding:30px;}
+.aboutMePage > .contentA * {font-size:18px;}
+.aboutMePage .socialHolder {}
+.aboutMePage .socialHolder > p:first-child {margin-bottom:20px;}
+.aboutMePage .socialHolder b {display:block; margin-bottom:3px;}
+.aboutMePage .socialHolder a {display:inline-block; background:#fff; border:1px solid #ccc; border-radius:3px;}
+.aboutMePage .socialHolder a i {width:20px; text-align:center; margin:10px;}
+.aboutMePage .socialHolder a:hover {background:#eee; box-shadow:0px 0 20px #aaa inset; text-shadow:2px 2px 2px #aaa;}
+
 /*nivo lightbox*/
 .nivo-lightbox-overlay { position: fixed; top: 0; left: 0; z-index: 99998; width: 100%; height: 100%; overflow: hidden; visibility: hidden; opacity: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; background: rgba(0, 0, 0, 0.7); }
 .nivo-lightbox-loading { background: url(//kerimx.net/kerimx.tumblr.com/images/loading.gif) no-repeat 50% 50%; }
@@ -146,7 +159,7 @@ nav.paging ul.p1 > li > a:hover {box-shadow:0px 10px 20px #eee inset;}
 .nivo-lightbox-title-wrap { position: absolute; bottom: 0; left: 0; width: 100%; z-index: 99999; text-align: center; }
 .nivo-lightbox-prev { position: absolute; top: 50%; left: -2px; }
 .nivo-lightbox-next { position: absolute; top: 50%; right: -2px; }
-.nivo-lightbox-close { position: absolute; top: 3%; right: 3%; background: #e24f4f; padding: 5px; border-radius: 5px; }
+.nivo-lightbox-close { position: absolute; top: 3%; right: 3%; background: #e24f4f; padding: 5px 7px; border-radius: 5px;}
 .nivo-lightbox-nav { display: none; background: #e24f4f; width: 40px; height: 70%; top: 15%; border-radius: 3px; }
 .nivo-lightbox-image { text-align: center; }
 .nivo-lightbox-image img { max-width: 100%; max-height: 100%; width: auto; height: auto; vertical-align: middle; box-shadow: 0 0 50px #000; }
@@ -178,11 +191,11 @@ nav.paging ul.p1 > li > a:hover {box-shadow:0px 10px 20px #eee inset;}
 .nivo-lightbox-open > a.nivo-lightbox-nav:hover > i, .nivo-lightbox-open > a.nivo-lightbox-close:hover > i { text-shadow: 0 0 2px #fff; }
 .nivo-lightbox-close > i { font-size: 30px; color: #fff; }
 
+/*lightbox tema*/
+.nivo-lightbox-theme-default .nivo-lightbox-ajax, .nivo-lightbox-theme-default .nivo-lightbox-inline {background:#fff; box-shadow:0 0 50px #000;}
+
 @media screen and (min-width: 601px) {/*pc*/
-/*header pc*/
-header nav ul li.tumblr {position:fixed; right:11px; top:60px; border-right:none; box-shadow:1px 1px 5px -3px #000 inset;}
-header nav ul li.tumblr > a {background:url("https://secure.assets.tumblr.com/images/iframe_logo.png") no-repeat scroll 10px center; width:100px; height:34px; padding:0; text-indent:-999em;}
-header nav ul li.tumblr > a:after {text-indent:0; content:"\f067"; padding-left:5px; font-family:FontAwesome; color:#fff; text-shadow:0 0 7px #fff; position:absolute; right:10px; top:8px;}
+.pc1 {}
 }
 
 @media screen and (max-width: 600px) {
@@ -191,28 +204,18 @@ body {background:#fff !important;}
 .maxW {width:96%;}
 .box {padding:10px;}
 
-header nav ul.m1 li:first-child {border-left:none;}
-header nav ul.social li:last-child {border-right:none;}
-
 .posts {height:auto !important;}
-.posts > article, .grid-sizer {display:block; position:static !important; width:100%; max-width:522px; margin-right:auto; margin-left:auto;}
+.posts > article, .grid-sizer {display:block; position:static !important; width:100%; max-width:522px !important; margin-right:auto !important; margin-left:auto !important;}
 
 /*menü 600px*/
-header nav > i.fa {display:table !important; margin:0 auto; padding:10px; cursor:pointer; font-size:1.5em; color:#fff;}
-header nav.open > i.fa:before {content:"\f00d";}
-header nav > section {display:none; padding:10px 0;}
-header nav.open > section {display:block;}
-header nav ul {float:none !important;}
-header nav ul.m1 {margin-bottom:15px;}
-header nav ul.social:before {content:""; display:block; width:90%; margin:15px auto; border-top:1px dotted #fff;}
-header nav ul li {float:none; border:none !important; margin-top:5px; border:1px solid #fff !important; border-radius:3px;}
-header nav ul li:hover {box-shadow:0 3px 5px -4px #000000 inset;}
-header nav ul li:first-child {margin-top:0;}
-header nav ul li a {text-shadow:0 0 10px #FFF; font-size:16px; line-height:1;}
-header nav ul li.facebook a:after {content:".com/kerimx"}
-header nav ul li.twitter a:after {content:".com/kerimx"}
-header nav ul li.instagram a:after {content:".com/_kerim"}
-header nav ul li.tumblr {background:rgba(45,70,97,1);}
+header nav {width:100%;}
+header nav > h1 > a {font-size:17px;}
+header nav > a > i.fa {font-size:24px;}
+header nav > a.aboutMe {float:right;}
+
+/*profil 600px*/
+.aboutMePage > .left {width:100%; float:none;}
+.aboutMePage > .contentA {margin-left:0; padding:15px;}
 }
 
 @media screen and (max-width: 480px) {
@@ -225,3 +228,6 @@ header nav ul li.tumblr {background:rgba(45,70,97,1);}
 body * {display:none;}
 body:before {content:"hesap makinesi detected !!!11"; font-family:arial; font-size:2em;}
 }
+
+/*sil*/
+.video {display:none !important;}

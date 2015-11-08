@@ -12,6 +12,26 @@ if (homePage == 1) {
 	$('body').addClass('normalPage');
 	}
 	
+//functions
+//pageTop
+function pageTop(){
+	$('html, body').animate({scrollTop:0}, 600);
+}
+//menuOpen
+function menuOpen0(){
+	$('body').removeClass('menuOpened');
+}
+function menuOpen1(){
+	$('body').addClass('menuOpened');
+}
+//aboutMe
+function aboutMe0(){
+	$('body').removeClass('aboutMeOpened')
+}
+function aboutMe1(){
+	$('body').addClass('aboutMeOpened')
+}
+
 //masonry
 $(document).ready(function () {
   // init Masonry after all images have loaded
@@ -29,22 +49,24 @@ $(document).ready(function () {
 if ($('.asd').html().length < 15) $('.asd').addClass('hidden');*/
 	
 //lightbox
-$('.photo figure > a, .photoset figure > a, article .lb').nivoLightbox({ keyboardNav: true });
+$('.photo figure > a, .photoset figure > a, .lb').nivoLightbox({ keyboardNav: true });
 
-//pageTop
+//sayfa basi
 $('li.pageInfo > i').click(function(){
-	$('html, body').animate({scrollTop:0}, 600);
+	pageTop();
 });
 
-//mobil menu
-$('header nav > i').click(function(e) {
+//menu
+$('header nav > a.siteMenu').click(function(e) {
 	e.stopPropagation();
-    if(!$('header nav').hasClass('open')){
-			$('header nav').addClass('open');
+    if(!$('body').hasClass('menuOpened')){
+			pageTop();
+			menuOpen1();
 		}else{
-			$('header nav').removeClass('open');
+			menuOpen0();
 			};
 });
-	$(document).click(function(){
-			$('header nav').removeClass('open');
-	});
+
+$(document).click(function(){
+		menuOpen0();
+});

@@ -21,19 +21,24 @@
 <body>
   <section class="container">
     <header>
-      <nav><i class="fa fa-bars noPc"></i> <section class="maxW clearfix"><ul class="m1"><li class="home"><a href="/">blog</a></li><li class="askMe"><a href="/ask">soru vb..</a></li></ul> <ul class="social"><li class="facebook"><a target="_blank" href="http://facebook.com/kerimx">facebook</a></li><li class="twitter"><a target="_blank" href="http://twitter.com/kerimx">twitter</a></li><li class="instagram"><a target="_blank" href="http://instagram.com/_kerim">instagram</a></li><li class="tumblr"><a target="_blank" href="https://www.tumblr.com/follow/kerimx">tumblr 'da takip et</a></li></ul></section></nav>
-    </header>
+  <nav> <a class="siteMenu" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+    <h1><a href="/">{Title}</a></h1>
+    <a class="lb aboutMe" href="#aboutMePage" data-lightbox-type="inline"><i class="fa fa-question"></i></a>
+    <section class="sub">
+      <ul class="m1">
+        <li class="home"><a href="{BlogURL}"><i class="fa fa-home"></i>blog</a></li>
+        {block:AskEnabled}
+        <li class="askMe"><a href="/ask"><i class="fa fa-commenting-o"></i>{AskLabel}</a></li>
+        <li class="archive"><a href="/archive"><i class="fa fa-calendar"></i>Arşiv</a></li>
+        {/block:AskEnabled}
+        {block:Pages}
+        <li><a target="_blank" href="{URL}"><i class="fa fa-angle-right"></i>{Label}</a></li>
+        {/block:Pages}
+      </ul>
+    </section>
+  </nav>
+</header>
     
-       <aside class="kx100">
-            <section class="clearfix box profile">
-              <figure>
-                <img src="//kerimx.net/upload/images/profile.jpg">
-                <figcaption>{Description}</figcaption>
-              </figure>
-            </section>
-            {block:Pages}<section class="clearfix box pageMenu"><ul class="l1"><li><a target="_blank" href="{URL}">{Label}</a></li></ul></section>{/block:Pages}
-       </aside>
-        
     <section class="maxW clearfix posts">
 	  <div class="grid-sizer"></div>
     {block:Posts}
@@ -148,9 +153,13 @@
         {block:PreviousPage}<li class="prev"><a href="{PreviousPage}"><i class="fa fa-chevron-left"></i></a></li>{/block:PreviousPage}
         <li class="pageInfo">{CurrentPage}/{TotalPages} <i class="fa fa-angle-double-up"></i></li>
         {block:NextPage}<li class="next"><a href="{NextPage}"><i class="fa fa-chevron-right"></i></a></li>{/block:NextPage}
-      </ul> </section></nav></section>{/block:Pagination}
+      </ul> </section></nav>{/block:Pagination}
+       
+	<section id="aboutMePage" class="aboutMePage clearfix"><div class="left"><img class="imgProfile" src="{HeaderImage}"></div><div class="contentA">{Description}</div></section>
+      </section>
+      
 
-  <footer>footer 'a ne yazim aq? öptüm :)</footer>
+  <footer>{CopyrightYears} footer 'a ne yazim aq? öptüm :)</footer>
 
   <script src="//kerimx.net/upload/js/jquery-2.1.4.min.js"></script>
   <script src="//kerimx.net/upload/js/imagesloaded.pkgd.min.js"></script>
