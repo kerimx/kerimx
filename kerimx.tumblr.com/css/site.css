@@ -227,6 +227,3 @@ header nav > a.aboutMe {float:right;}
 body * {display:none;}
 body:before {content:"hesap makinesi detected !!!11"; font-family:arial; font-size:2em;}
 }
-
-/*sil*/
-.video {display:none !important;}
